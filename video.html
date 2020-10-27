@@ -70,6 +70,18 @@
             </div>
           </div>
         </div>
+				<div class="fullwidth-block content dark-bg" data-bg-color="#1b1b1b">
+				 <canvas id="drawCanvas"  >Canvas is not supported on this browser!</canvas>
+				 <input id="channel"  value="">
+				 <section id="colorSwatch">
+					 <input type="radio" name="color" id="color01" data-color="gold" checked><label for="color01"></label>
+					 <input type="radio" name="color" id="color02" data-color="darkorange">	<label for="color02"></label>
+					 <input type="radio" name="color" id="color03" data-color="navy">		<label for="color03"></label>
+					 <input type="radio" name="color" id="color04" data-color="yellowgreen">	<label for="color04"></label>
+					 <input type="radio" name="color" id="color05" data-color="firebrick">	<label for="color05"></label>
+					 <input type="radio" name="color" id="color06" data-color="powderblue">	<label for="color06"></label>
+				 </section>
+			 </div>
 			</main>
 
 			<footer class="site-footer">
@@ -111,7 +123,7 @@
        location.hash = Math.floor(Math.random() * 10000) + 5;
      }
      const roomHash = location.hash.substring(1);
-
+		 document.getElementById('channel').value = "#"+roomHash;
      const drone = new ScaleDrone('yiS12Ts5RdNhebyM');
      let localStream;
      const videochatroomname = 'observable-' + roomHash;
@@ -246,6 +258,18 @@
         console.log(localStream.getVideoTracks()[0].enabled)
      }
      </script>
+<link rel="stylesheet" href="css/style2.css">
+
+
+
+
+
+		 	<script>.
+		 		var drawHistory = false;
+		 	</script>
+
+		 	<script src="https://cdn.pubnub.com/pubnub.min.js"></script>
+		 	<script src="js/app2.js"></script>
 
   </body>
 
