@@ -1778,6 +1778,10 @@ address {
 
 #branding {
   float: left; }
+  .logo{
+    padding: 0;
+    width: 100px;
+  }
   #branding .logo, #branding .site-title {
     display: inline-block;
     vertical-align: middle; }
