@@ -1,3 +1,12 @@
+jQuery(document).ready(function($) {
+            $('.counter1').counterUp({
+                delay: 10,
+                time: 1000
+            });
+
+        });
+
+
 (function($, document, window){
 
 	$(document).ready(function(){
@@ -164,34 +173,3 @@
 		return value.toFixed(settings.decimals);
 	}
 }(jQuery));
-
-jQuery(function ($) {
-
-	$(window).bind('scroll', function() {
-    if($(window).scrollTop() >= $('.slide').offset().top + $('.slide').outerHeight() - window.innerHeight) {
-          $('.timer').each(count);
-
-    }
-		if($(window).scrollTop() >= $('#Announcements').offset().top + $('#Announcements').outerHeight() - window.innerHeight) {
-          $("#Announcements").stop().fadeIn('slow');
-
-    }
-		else{
-			 $("#Announcements").stop().fadeOut('fast');
-		}
-});
-  $('.count-number').data('countToOptions', {
-	formatter: function (value, options) {
-	  return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
-	}
-  });
-
-  // start all the timers
-
-
-  function count(options) {
-	var $this = $(this);
-	options = $.extend({}, options || {}, $this.data('countToOptions') || {});
-	$this.countTo(options);
-  }
-});

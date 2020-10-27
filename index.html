@@ -13,9 +13,8 @@
 
 
 		<link rel="stylesheet" href="style.css">
-
-
-
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/jquery.fadethis.min.js"></script>
 	</head>
 
 
@@ -80,28 +79,28 @@
 
 							<div class="counter">
 								<img src="images/student.png" class="counter-icon">
-								<h3 class="timer count-title count-number counter-num" data-to="1500" data-speed="750"></h3>
+								<h3 class="timer count-title count-number counter-num" ><span class="counter1">7500</span></h3>
 								<small class="counter-label">students</small>
 							</div>
 
 
 							<div class="counter">
 								<img src="images/teacher.png" class="counter-icon">
-								<h3 class="timer count-title count-number counter-num" data-to="5000" data-speed="750"></h3>
+								<h3 class="timer count-title count-number counter-num" ><span class="counter1">5000</span></h3>
 								<small class="counter-label">teachers</small>
 							</div>
 
 
 							<div class="counter">
 								<img src="images/online.png" class="counter-icon">
-								<h3 class="timer count-title count-number counter-num" data-to="4000" data-speed="750"></h3>
+								<h3 class="timer count-title count-number counter-num" ><span class="counter1">4000</span></h3>
 								<small class="counter-label">Average users online</small>
 							</div>
 
 
 							<div class="counter last">
 								<img src="images/helper.png" class="counter-icon">
-								<h3 class="timer count-title count-number counter-num" data-to="1200" data-speed="750"></h3>
+								<h3 class="timer count-title count-number counter-num" ><span class="counter1">1200</span></h3>
 								<small class="counter-label">Helpers</small>
 							</div>
 
@@ -114,7 +113,7 @@
 						<h2 class="section-title">Our Team</h2>
 						<div class="row">
 							<div class="col-md-3 col-sm-6">
-								<div class="team">
+								<div class="team slide-top">
 									<figure class="team-image"><img src="images/user.png" alt="person-1"></figure>
 									<h3 class="team-name"> Person 1</h3>
 									<small class="team-desc">Founder</small>
@@ -125,7 +124,7 @@
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-6">
-								<div class="team">
+								<div class="team slide-top">
 									<figure class="team-image"><img src="images/user.png" alt="person-2"></figure>
 									<h3 class="team-name"> Person 2</h3>
 									<small class="team-desc">Co-Founder</small>
@@ -136,7 +135,7 @@
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-6">
-								<div class="team">
+								<div class="team slide-top">
 									<figure class="team-image"><img src="images/user.png" alt="person-3"></figure>
 									<h3 class="team-name">Person 3</h3>
 									<small class="team-desc">Co-Founder</small>
@@ -147,7 +146,7 @@
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-6">
-								<div class="team">
+								<div class="team slide-top">
 									<figure class="team-image"><img src="images/user.png" alt="person-4"></figure>
 									<h3 class="team-name">Person 4</h3>
 									<small class="team-desc">Moderator</small>
@@ -197,19 +196,19 @@
 					</div>
 				</div>
 
-				<div class="fullwidth-block dark-bg" data-bg-color="#f63f3f">
+				<div class="fullwidth-block dark-bg " data-bg-color="#f63f3f">
 					<div class="container">
 						<h2 class="section-title">Announcements</h2>
 						<ul class="news" id="Announcements">
-							<li>
+							<li class="slide-left">
 								<div class="entry-date"><span class="date">20</span><span class="month">Oct</span></div>
 								<div class="entry-summary">Developers are making the whiteboard for better teaching experience.</div>
 							</li>
-							<li>
+							<li class="slide-right">
 								<div class="entry-date"><span class="date">15</span><span class="month">Oct</span></div>
 								<div class="entry-summary">Video chat has been added to the webiste.</div>
 							</li>
-							<li>
+							<li class="slide-bottom">
 								<div class="entry-date"><span class="date">12</span><span class="month">Oct</span></div>
 								<div class="entry-summary">Webiste is live.</div>
 							</li>
@@ -236,19 +235,21 @@
 						<a href="#"><i class="fa fa-google-plus"></i></a>
 						<a href="#"><i class="fa fa-pinterest"></i></a>
 					</div>
-
-
 				</div>
 			</footer>
 
-		</div> <
+
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js" charset="utf-8"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+		</div>
 
 
 
-		<script src="js/jquery-1.11.1.min.js"></script>
+
 		<script src="js/plugins.js"></script>
 		<script src="js/app.js"></script>
-
+<script>$(window).fadeThis();</script>
 	</body>
 
 </html>
